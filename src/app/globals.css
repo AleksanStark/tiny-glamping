@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #151515;
+  --primary-color: #8e8787;
+  --secondary-color: #f9f9f9;
+  --btn-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  --hero-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  --image-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@layer utilities {
+  .hidden-safe {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .invisible-safe {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .visible-safe {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s ease;
+  }
+
+  .flex-row-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-row-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-col-center {
+    @apply flex justify-center items-center flex-col;
+  }
+}
+
+@layer components {
+  .reserve-btn {
+    @apply font-bold font-[family-name:var(--font-inter)] w-35 py-2 px-2 rounded-4xl shadow-[var(--btn-shadow)] text-center;
+  }
+
+  .choose-btn {
+    @apply border-[1px] px-3 py-2 rounded-4xl  font-bold font-[family-name:var(--font-inter)] text-center;
+  }
+
+  .advantages-list {
+    @apply flex items-stretch flex-col gap-5;
+  }
+
+  .advantages-card {
+    @apply flex  rounded-4xl bg-[#0B3A2C] py-8 px-5 flex-col gap-2;
+  }
+
+  .footer-btn {
+    @apply text-white font-bold text-sm bg-[#054e37] px-4 py-5 rounded-4xl shadow-[var(--btn-shadow)]  gap-2 uppercase w-40;
+  }
+}
+
+.advantages-list > :nth-child(even) {
+  @apply self-end;
+}
+
+.advantages-list > :nth-child(odd) {
+  @apply self-start;
+}
