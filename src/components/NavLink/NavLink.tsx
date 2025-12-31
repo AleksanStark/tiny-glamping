@@ -8,9 +8,10 @@ import { ReactNode } from "react";
 interface NavLinkProps {
   href: string;
   children: ReactNode;
+  text_color?: string;
 }
 
-export default function NavLink({ href, children }: NavLinkProps) {
+export default function NavLink({ href, children, text_color }: NavLinkProps) {
   const pathname = usePathname();
   const router = useRouter();
   const isActive = pathname === href;
@@ -27,8 +28,9 @@ export default function NavLink({ href, children }: NavLinkProps) {
   };
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="relative flex justify-center items-center flex-col">
       <a
+        style={{ color: text_color }}
         href={href}
         onClick={handleClick}
         className={clsx(
@@ -39,7 +41,12 @@ export default function NavLink({ href, children }: NavLinkProps) {
         {children}
       </a>
 
-      {isActive && <div className="w-[104px] h-[1px] bg-black" />}
+      {isActive && (
+        <div
+          style={{ backgroundColor: text_color }}
+          className="w-[104px] h-[1px] bg-black absolute -bottom-1"
+        />
+      )}
     </div>
   );
 }

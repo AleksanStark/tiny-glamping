@@ -1,13 +1,14 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 export default function ReserveBtn({
   color,
   text_color,
-  width,
+  className,
 }: {
   color: string;
   text_color: string;
-  width?: number;
+  className?: string;
 }) {
   return (
     <Link
@@ -15,10 +16,12 @@ export default function ReserveBtn({
         backgroundColor: color,
         color: text_color,
         borderColor: text_color,
-        width,
       }}
       href={""}
-      className={"reserve-btn"}
+      className={clsx(
+        "reserve-btn  xs:text-xs base:text-sm md:text-lg",
+        className
+      )}
     >
       Reserve now
     </Link>

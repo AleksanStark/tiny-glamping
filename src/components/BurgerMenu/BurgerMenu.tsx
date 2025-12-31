@@ -34,7 +34,7 @@ export default function BurgerMenu() {
           <NavLink href="/to_partners">To partners</NavLink>
         </li>
         <li>
-          <NavLink href="">About us</NavLink>
+          <NavLink href="/about_us">About us</NavLink>
         </li>
       </ul>
     </div>

@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import { Jost, Montserrat, Poppins } from "next/font/google";
+import { Jost, Montserrat, Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { ModalStoreProvider } from "@/providers/modal-store-provider";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 const jost = Jost({
   variable: "--font-jost",
@@ -16,7 +21,7 @@ const montserrat = Montserrat({
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "600", "300"],
 });
 
 export const metadata: Metadata = {
@@ -32,11 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${jost.variable} ${montserrat.variable} ${poppins.variable}  antialiased`}
+        className={` ${jost.variable} ${montserrat.variable} ${poppins.variable} ${inter.variable}  antialiased`}
       >
-        <div className="container">
-          <ModalStoreProvider>{children}</ModalStoreProvider>
-        </div>
+        <ModalStoreProvider>{children}</ModalStoreProvider>
       </body>
     </html>
   );

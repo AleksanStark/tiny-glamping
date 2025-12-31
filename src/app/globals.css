@@ -8,6 +8,8 @@
   --btn-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
   --hero-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
   --image-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  --uncover-color: rgba(249, 249, 249, 0.2);
+  --about-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
 }
 
 @theme inline {
@@ -15,6 +17,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-xs: 20rem;
+  --breakpoint-base: 23rem;
+  --breakpoint-average: 86.875rem;
 }
 
 body {
@@ -27,13 +32,27 @@ button {
   cursor: pointer;
 }
 
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 0.75rem;
-}
-
 @layer utilities {
+  .container {
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+  @media screen and (min-width: 320px) {
+    .container {
+      max-width: 100%;
+      padding-inline: 0.75rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1440px;
+      padding-inline: 3rem;
+      margin: 0 auto;
+    }
+  }
+
   .hidden-safe {
     visibility: hidden;
     pointer-events: none;
@@ -62,6 +81,9 @@ button {
   .flex-col-center {
     @apply flex justify-center items-center flex-col;
   }
+  .flex-col-start {
+    @apply flex justify-start items-start flex-col;
+  }
 }
 
 @layer components {
@@ -73,23 +95,15 @@ button {
     @apply border-[1px] px-3 py-2 rounded-4xl  font-bold font-[family-name:var(--font-inter)] text-center;
   }
 
-  .advantages-list {
-    @apply flex items-stretch flex-col gap-5;
-  }
-
   .advantages-card {
-    @apply flex  rounded-4xl bg-[#0B3A2C] py-8 px-5 flex-col gap-2;
+    @apply flex flex-col rounded-4xl bg-[#0B3A2C] py-5 px-5 gap-2;
   }
 
   .footer-btn {
-    @apply text-white font-bold text-sm bg-[#054e37] px-4 py-5 rounded-4xl shadow-[var(--btn-shadow)]  gap-2 uppercase w-40;
+    @apply text-white font-extrabold bg-[#054e37] rounded-4xl shadow-[var(--btn-shadow)]   uppercase w-40;
   }
-}
 
-.advantages-list > :nth-child(even) {
-  @apply self-end;
-}
-
-.advantages-list > :nth-child(odd) {
-  @apply self-start;
+  .form-field {
+    @apply bg-[#F9F9F9] rounded-4xl py-2 px-4 w-full;
+  }
 }
