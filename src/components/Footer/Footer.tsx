@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center lg:hidden gap-3 ">
+      <div className="flex justify-between items-center lg:hidden gap-3 mb-5 ">
         <h4 className="text-white font-bold text-sm ">+995-591-07-95-33</h4>
         <Link
           className="footer-btn flex-row-center   text-sm xs:px-4 xs:py-4 base:px-4 base:py-5 gap-3"
