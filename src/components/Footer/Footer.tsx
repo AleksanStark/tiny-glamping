@@ -103,7 +103,7 @@ export default function Footer() {
       <hr className="text-[#F9F9F9] mb-4" />
 
       <h5 className=" text-sm text-[#B4B4B4] text-center">
-        © {new Date().getFullYear()} TinyGlamp All rights reserved.
+        © {new Date().getFullYear()} TinyGlamp All rights reserved .
       </h5>
     </footer>
   );
