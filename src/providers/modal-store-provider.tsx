@@ -5,7 +5,7 @@ import {
   createModalStore,
   initModalStore,
 } from "@/store/modal-store";
-import React, { createContext, ReactNode, useContext, useRef } from "react";
+import React, { createContext, ReactNode, useContext } from "react";
 import { useStore } from "zustand";
 
 export type ModalStoreApi = ReturnType<typeof createModalStore>;

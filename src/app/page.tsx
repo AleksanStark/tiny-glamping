@@ -2,7 +2,7 @@ import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 import ChooseBtn from "@/components/ChooseBtn/ChooseBtn";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import ReserveBtn from "@/components/ReserveBtn/ReserveBtn";
+
 import Image from "next/image";
 
 export default function Home() {

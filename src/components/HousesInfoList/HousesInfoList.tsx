@@ -120,31 +120,31 @@ export default function HousesInfoList({
               Journey log:
             </h3>
             <ul className="flex flex-col gap-4">
-              <li className="flex gap-3">
+              <li className="flex xs:items-center gap-3">
                 <SvgMap />
                 <p className="text-[#0b3a2c] font-[family-name:var(--font-jost)]">
                   Eden - Kvareli, Georgia - (21.01.2023 - 28.01.2023)
                 </p>
               </li>
-              <li className="flex gap-3">
+              <li className="flex xs:items-center gap-3">
                 <SvgMap />
                 <p className="text-[#0b3a2c] font-[family-name:var(--font-jost)]">
                   Eden - Tbilisi, Georgia - (17.01.2023 - 20.01.2023)
                 </p>
               </li>
-              <li className="flex gap-3">
+              <li className="flex xs:items-center gap-3">
                 <SvgMap />
                 <p className="text-[#0b3a2c] font-[family-name:var(--font-jost)]">
                   Eden - Kutaisi, Georgia - (10.01.2023 - 15.01.2023)
                 </p>
               </li>
-              <li className="flex gap-3">
+              <li className="flex xs:items-center gap-3">
                 <SvgMap />
                 <p className="text-[#0b3a2c] font-[family-name:var(--font-jost)]">
                   Eden - Batumi, Georgia - (6.01.2023 - 9.01.2023)
                 </p>
               </li>
-              <li className="flex gap-3">
+              <li className="flex xs:items-center gap-3">
                 <SvgMap />
                 <p className="text-[#0b3a2c] font-[family-name:var(--font-jost)]">
                   Eden - Tbilisi, Georgia - (1.01.2023 - 5.01.2023)

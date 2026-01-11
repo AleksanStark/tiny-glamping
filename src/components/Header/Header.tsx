@@ -1,7 +1,7 @@
 "use client";
 import MenuBurgerIcon from "@/icons/MenuBurgerIcon";
 import { useModalStore } from "@/providers/modal-store-provider";
-import ReserveBtn from "../ReserveBtn/ReserveBtn";
+
 import clsx from "clsx";
 import Image from "next/image";
 import NavLink from "../NavLink/NavLink";
