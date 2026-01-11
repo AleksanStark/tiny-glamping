@@ -115,7 +115,7 @@ export default function HousesInfoList({
             </h3>
             <Image src={"/map.jpg"} alt="Map" width={353} height={350} />
           </div>
-          <div className="bg-[var(--secondary-color)] shadow-[var(--house-log-shadow)] p-4 md:pl-9 rounded-[50px] md:w-[700px] mb-6 lg:w-full">
+          <div className="flex flex-col justify-center items-center bg-[var(--secondary-color)] shadow-[var(--house-log-shadow)] p-4  rounded-[50px] md:w-full mb-6 lg:w-full">
             <h3 className="text-[#0b3a2c] font-bold text-center text-xl mb-3">
               Journey log:
             </h3>

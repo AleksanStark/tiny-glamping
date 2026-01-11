@@ -43,7 +43,7 @@ export default function DatePicker({
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-2 shadow-[var(--house-log-shadow)] rounded-[50px] py-4 md:w-[700px] lg:w-full mb-4 md:mx-auto md:mb-6">
+      <div className="flex flex-col justify-center items-center gap-2 shadow-[var(--house-log-shadow)] rounded-[50px] py-4 md:w-full lg:w-full mb-4 md:mx-auto md:mb-6">
         <h3 className="text-xl text-[#0B3A2C] font-bold">Selected Date</h3>
         <h4 className="text-[#0B3A2C]">{selectedDays}</h4>
 
