@@ -1,32 +1,31 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { ReactNode } from "react";
 
-export default function ChooseBtn({
+export default function BookingHouseBtn({
   color,
   text_color,
   className,
-  children,
+  href,
 }: {
-  color: string;
-  text_color: string;
-  children: ReactNode;
+  color?: string;
+  text_color?: string;
   className?: string;
+  href: string;
 }) {
   return (
     <Link
-      href={"/house_catalog"}
       style={{
         backgroundColor: color,
         color: text_color,
         borderColor: text_color,
       }}
+      href={href}
       className={clsx(
-        "choose-btn xs:text-xs  base:text-sm md:text-lg",
+        "booking-btn xs:w-45 md:w-60 xs:text-sm base:text-base md:text-xl",
         className
       )}
     >
-      {children}
+      Booking this home
     </Link>
   );
 }

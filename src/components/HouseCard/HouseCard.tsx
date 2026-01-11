@@ -3,8 +3,10 @@ import SvgGuests from "@/icons/Guests";
 import SvgPlus from "@/icons/Plus";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HouseCard({
+  href,
   price,
   guests,
   image_path,
@@ -16,9 +18,13 @@ export default function HouseCard({
   image_path: string;
   classNameImg?: string;
   classNameBtns?: string;
+  href: string;
 }) {
   return (
-    <div className="relative grid aspect-[4/3] w-full overflow-hidden rounded-2xl">
+    <Link
+      href={href}
+      className="relative grid aspect-[4/3] w-full overflow-hidden rounded-2xl"
+    >
       {/* Image */}
       <Image
         src={image_path}
@@ -58,6 +64,6 @@ export default function HouseCard({
           </ul>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

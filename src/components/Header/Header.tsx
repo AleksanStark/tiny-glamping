@@ -65,7 +65,7 @@ export default function Header({
         </ul>
       </nav>
 
-      <ReserveBtn color="black" text_color="#F9F9F9" />
+      <div></div>
     </header>
   );
 }

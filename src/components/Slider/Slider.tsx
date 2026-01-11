@@ -32,22 +32,52 @@ export default function Slider({
       }}
     >
       <SwiperSlide>
-        <HouseCard price={1500} guests={3} image_path="/house1.jpg" />
+        <HouseCard
+          href="/houses/1"
+          price={1500}
+          guests={3}
+          image_path="/house1.jpg"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HouseCard price={800} guests={4} image_path="/house2.jpg" />
+        <HouseCard
+          href="/houses/2"
+          price={800}
+          guests={4}
+          image_path="/house2.jpg"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HouseCard price={1200} guests={2} image_path="/house3.jpg" />
+        <HouseCard
+          href="/houses/3"
+          price={1200}
+          guests={2}
+          image_path="/house3.jpg"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HouseCard price={600} guests={2} image_path="/house4.jpg" />
+        <HouseCard
+          href="/houses/4"
+          price={600}
+          guests={2}
+          image_path="/house4.jpg"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HouseCard price={900} guests={3} image_path="/house5.jpg" />
+        <HouseCard
+          href="/houses/5"
+          price={900}
+          guests={3}
+          image_path="/house5.jpg"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HouseCard price={1400} guests={5} image_path="/house6.jpg" />
+        <HouseCard
+          href="/houses/6"
+          price={1400}
+          guests={5}
+          image_path="/house6.jpg"
+        />
       </SwiperSlide>
     </Swiper>
   );

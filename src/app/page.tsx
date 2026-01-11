@@ -33,7 +33,6 @@ export default function Home() {
                   in the wild without sacrificing luxury and design.
                 </p>
                 <div className="flex items-start justify-start  gap-3">
-                  <ReserveBtn color="#000000" text_color="" />
                   <ChooseBtn color="" text_color="#f9f9f9">
                     Choose a house
                   </ChooseBtn>
@@ -57,7 +56,6 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:justify-center md:items-center gap-3">
-            <ReserveBtn color="#193d1f" text_color="#f9f9f9" />
             <ChooseBtn color="" text_color="#193D1F">
               Choose a house
             </ChooseBtn>
@@ -143,12 +141,6 @@ export default function Home() {
                 Our homes are on the move. Track their progress in real time.
               </p>
             </div>
-
-            <ReserveBtn
-              color="#193D1F"
-              text_color="#F9F9F9"
-              className="w-full max-w-52 lg:max-w-[300px] xl:max-w-[376px]"
-            />
           </div>
           <Image
             className="w-full"

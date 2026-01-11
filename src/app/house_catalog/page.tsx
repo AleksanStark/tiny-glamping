@@ -4,7 +4,6 @@ import ChooseBtn from "@/components/ChooseBtn/ChooseBtn";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import HouseCard from "@/components/HouseCard/HouseCard";
-import ReserveBtn from "@/components/ReserveBtn/ReserveBtn";
 import Slider from "@/components/Slider/Slider";
 import SliderBtns from "@/components/SliderBtns/SliderBtns";
 import SvgSearch from "@/icons/Search";
@@ -46,7 +45,6 @@ export default function HouseCatalog() {
         </div>
 
         <div className="flex-row-center gap-4">
-          <ReserveBtn color="#ffff" text_color="" />
           <ChooseBtn color="" text_color="#F9F9F9">
             Find out more
           </ChooseBtn>
@@ -116,6 +114,7 @@ export default function HouseCatalog() {
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
+                href="/houses/1"
                 price={1500}
                 guests={3}
                 image_path="/house1.jpg"
@@ -132,8 +131,9 @@ export default function HouseCatalog() {
             </li>
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
-                price={1500}
-                guests={3}
+                href="/houses/2"
+                price={800}
+                guests={4}
                 image_path="/house2.jpg"
                 classNameImg="size-85"
                 classNameBtns="top-75"
@@ -147,8 +147,9 @@ export default function HouseCatalog() {
             </li>
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
-                price={1500}
-                guests={3}
+                href="/houses/3"
+                price={1200}
+                guests={2}
                 image_path="/house3.jpg"
                 classNameImg="size-85"
                 classNameBtns="top-75"
@@ -162,7 +163,8 @@ export default function HouseCatalog() {
             </li>
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
-                price={1500}
+                href="/houses/4"
+                price={600}
                 guests={3}
                 image_path="/house4.jpg"
                 classNameImg="size-85"
@@ -178,7 +180,8 @@ export default function HouseCatalog() {
             </li>
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
-                price={1500}
+                href="/houses/5"
+                price={900}
                 guests={3}
                 image_path="/house5.jpg"
                 classNameImg="size-85"
@@ -193,7 +196,8 @@ export default function HouseCatalog() {
             </li>
             <li className="flex flex-col gap-1 xl:gap-4">
               <HouseCard
-                price={1500}
+                href="/houses/6"
+                price={1400}
                 guests={5}
                 image_path="/house6.jpg"
                 classNameImg="size-85"

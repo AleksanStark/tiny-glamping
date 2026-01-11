@@ -34,6 +34,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="/houses/1"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"
@@ -50,6 +51,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="houses/2"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"
@@ -66,6 +68,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="/houses/3"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"
@@ -82,6 +85,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="/houses/4"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"
@@ -98,6 +102,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="/houses/5"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"
@@ -114,6 +119,7 @@ export default function LocationMap() {
                 />
 
                 <ReserveBtn
+                  href="/houses/6"
                   color="#054E37"
                   text_color="#F9F9F9"
                   className="w-full"

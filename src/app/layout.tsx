@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jost, Montserrat, Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import "react-day-picker/style.css";
 import { ModalStoreProvider } from "@/providers/modal-store-provider";
 
 const inter = Inter({
