@@ -1,22 +1,16 @@
-"use client";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
-import ChooseBtn from "@/components/ChooseBtn/ChooseBtn";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import HouseCard from "@/components/HouseCard/HouseCard";
-import Slider from "@/components/Slider/Slider";
-import SliderBtns from "@/components/SliderBtns/SliderBtns";
-import SvgSearch from "@/icons/Search";
-import { useState } from "react";
-import { SwiperClass } from "swiper/react";
 
+import SvgSearch from "@/icons/Search";
 export default function HouseCatalog() {
-  const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-  const [isBeginning, setIsBeginning] = useState(false);
-  const [isEnd, setIsEnd] = useState(false);
+  // const [swiper, setSwiper] = useState<SwiperClass | null>(null);
+  // const [isBeginning, setIsBeginning] = useState(false);
+  // const [isEnd, setIsEnd] = useState(false);
   return (
     <>
-      <section className="bg-[#0B3A2C] rounded-bl-4xl rounded-br-4xl px-3 py-2  mb-6 md:mb-8 lg:mb-14 lg:pb-8  text-center xl:mb-11 xl:px-[50px] xl:pb-28 average:pb-32">
+      <section className="bg-[#0B3A2C] rounded-bl-4xl rounded-br-4xl px-3 py-2  mb-6 md:mb-8 lg:mb-14  text-center xl:mb-11 xl:px-[50px]">
         <Header burger_color="white" navlink_color="#F9F9F9" />
 
         <div>
@@ -29,11 +23,11 @@ export default function HouseCatalog() {
             collection of mobile glamping units to find your next adventure
           </p>
         </div>
-        <div className="xs:hidden lg:block mb-3">
+        {/* <div className="xs:hidden lg:block mb-3">
           <SliderBtns swiper={swiper} isBeginning={isBeginning} isEnd={isEnd} />
-        </div>
+        </div> */}
 
-        <Slider
+        {/* <Slider
           onStateChange={(isBeginning, isEnd) => {
             setIsBeginning(isBeginning);
             setIsEnd(isEnd);
@@ -42,19 +36,14 @@ export default function HouseCatalog() {
         />
         <div className="lg:hidden xs:block mb-4">
           <SliderBtns swiper={swiper} isBeginning={isBeginning} isEnd={isEnd} />
-        </div>
+        </div> */}
 
-        <div className="flex-row-center gap-4">
+        {/* <div className="flex-row-center gap-4">
           <ChooseBtn color="" text_color="#F9F9F9">
             Find out more
           </ChooseBtn>
-        </div>
-      </section>
-      <div
-        className="container
-      "
-      >
-        <section className="xl:w-[90%]  mb-6 md:mb-8 lg:mb-14 bg-[#09261D] rounded-4xl  px-5 py-4 xl:absolute  lg:left-0 xl:z-10 xl:left-15 xl:top-162 average:top-175 average:left-18 ">
+        </div> */}
+        <section className="mb-6 md:mb-8 lg:mb-14 bg-[#09261D] rounded-4xl  px-5 py-4">
           <form
             className="flex xs:flex-col xl:flex-row justify-center items-center  gap-3"
             action=""
@@ -109,7 +98,11 @@ export default function HouseCatalog() {
             </select>
           </form>
         </section>
-
+      </section>
+      <div
+        className="container
+      "
+      >
         <section className="mb-6 md:mb-8 lg:mb-14">
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <li className="flex flex-col gap-1 xl:gap-4">
