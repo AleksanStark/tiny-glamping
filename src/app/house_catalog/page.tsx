@@ -43,7 +43,7 @@ export default function HouseCatalog() {
             Find out more
           </ChooseBtn>
         </div> */}
-        <section className="mb-6 md:mb-8 lg:mb-14 bg-[#09261D] rounded-4xl  px-5 py-4">
+        <div className="mb-6 md:mb-8 lg:mb-14 bg-[#09261D] rounded-4xl  px-5 py-4">
           <form
             className="flex xs:flex-col xl:flex-row justify-center items-center  gap-3"
             action=""
@@ -97,12 +97,9 @@ export default function HouseCatalog() {
               <option value="Location">Autonomy</option>
             </select>
           </form>
-        </section>
+        </div>
       </section>
-      <div
-        className="container
-      "
-      >
+      <div className="container">
         <section className="mb-6 md:mb-8 lg:mb-14">
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <li className="flex flex-col gap-1 xl:gap-4">
